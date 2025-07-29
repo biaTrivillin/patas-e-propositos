@@ -9,10 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <Header />
       <body
       >
-        <main className="min-h-screen container mx-auto">
+      <Header />
+        <main className="min-h-screen container mx-auto p-4 md:p-0">
             {children}
         </main>
       </body>
