@@ -1,13 +1,32 @@
+import { FaCat, FaDog } from "react-icons/fa";
 import AdoptionSection from "./components/AdoptionSection";
 import DonateBanner from "./components/DonateBanner";
 import HomeBanner from "./components/HomeBanner";
+
+const especies = [
+  {
+    codigo: "cachorros",
+    especie: "cachorro",
+    icon: <FaDog />
+  },
+  {
+    codigo: "gatos",
+    especie: "gato",
+    icon: <FaCat />
+  }
+]
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-20">
       <HomeBanner />
-      <DonateBanner/>
-      <AdoptionSection/>
+      <DonateBanner />
+      {
+        especies.map(especie => (
+          <AdoptionSection especie={especie.especie} icon={especie.icon} codigo={especie.codigo}/>
+        ))
+      }
+
     </div>
   );
 }
