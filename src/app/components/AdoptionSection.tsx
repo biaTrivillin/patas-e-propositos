@@ -3,8 +3,8 @@
 import { Animal } from "@patas/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaDog } from "react-icons/fa";
 import HorizontalCard from "./commom/HorizontalCard";
+import Loader from "./commom/Loader";
 
 type AdoptionSectionProps = {
     especie: string;
@@ -31,7 +31,7 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
         fetchData();
     }, []);
 
-    if (loading) return <div>Carregando...</div>;
+    if (loading) return <Loader/>;
     if (animais.length === 0) return <div>Nenhum animal encontrado.</div>;
 
     return (
