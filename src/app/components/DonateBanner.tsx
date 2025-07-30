@@ -2,7 +2,7 @@ import { BiSolidDonateHeart } from "react-icons/bi";
 
 const DonateBanner = () => {
     return (
-        <div className="shadow-xl p-6 mx-auto max-w-xl flex flex-col rounded-xl mb-40  ">
+        <div className="shadow-xl p-6 mx-auto max-w-xl flex flex-col rounded-xl">
             <BiSolidDonateHeart className="text-5xl mb-4" />
             <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <div className="md:flex-3">
