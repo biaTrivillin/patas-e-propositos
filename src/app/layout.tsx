@@ -12,7 +12,7 @@ export default function RootLayout({
       <body
       >
       <Header />
-        <main className="min-h-screen container mx-auto p-4 md:p-0">
+        <main className="min-h-screen container mx-auto p-4 md:p-0 mb-30">
             {children}
         </main>
       </body>

@@ -65,7 +65,7 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
             </div>
             <div className="flex justify-end">
                 <Link
-                    href="#"
+                    href={`/${codigo}`}
                     className="px-3 py-2 bg-dark-blue text-sm md:text-md text-white  rounded-lg hover:bg-blue-300 transition shadow-md"
                 >
                     Ver todos
