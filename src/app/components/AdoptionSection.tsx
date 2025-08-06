@@ -17,10 +17,6 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        console.log(codigo)
-    })
-
-    useEffect(() => {
         async function fetchData() {
             setLoading(true);
             const res = await fetch(`/api/animais/${codigo}`);
@@ -29,7 +25,7 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
             setLoading(false);
         }
         fetchData();
-    }, []);
+    }, [codigo]);
 
     if (loading) return <Loader/>;
     if (animais.length === 0) return <div>Nenhum animal encontrado.</div>;
@@ -59,7 +55,7 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
 
                 <div className="flex-1 flex flex-col gap-6">
                     {animais.slice(1, 4).map(animal => (
-                        <HorizontalCard animal={animal} />
+                        <HorizontalCard animal={animal} key={animal.id} />
                     ))}
                 </div>
             </div>

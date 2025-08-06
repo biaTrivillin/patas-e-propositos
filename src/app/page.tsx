@@ -23,7 +23,12 @@ export default function Home() {
       <DonateBanner />
       {
         especies.map(especie => (
-          <AdoptionSection especie={especie.especie} icon={especie.icon} codigo={especie.codigo}/>
+          <AdoptionSection
+            key={especie.codigo}  
+            especie={especie.especie}
+            icon={especie.icon}
+            codigo={especie.codigo}
+          />
         ))
       }
 
