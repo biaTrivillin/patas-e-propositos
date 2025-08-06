@@ -2,20 +2,17 @@
 
 import { Animal } from "@patas/types";
 import { notFound } from "next/navigation";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import VerticalCard from "../components/commom/VerticalCard";
 import Loader from "../components/commom/Loader";
 import { FaCat, FaDog } from "react-icons/fa";
 
 type PageProps = {
-    params: {
-        codigo: string;
-    };
+    params: Promise<{ codigo: string }>;
 };
 
 export default function AnimalsPage({ params }: PageProps) {
-    const { codigo } = params;
-
+    const { codigo } = use(params);
     const [loading, setLoading] = useState(false)
     const [animais, setAnimais] = useState<Animal[]>([])
 

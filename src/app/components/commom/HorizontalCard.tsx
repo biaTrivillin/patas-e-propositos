@@ -19,7 +19,7 @@ const HorizontalCard: React.FC<HorizontalCardProps> = ({animal}) => {
                     {animal.minibio}
                 </p>
                 <Link
-                    href="#"
+                    href={`/animais/${animal.id}`}
                     className="px-3 mt-2 py-2 bg-blue-200 text-sm md:text-md text-dark-blue rounded-lg hover:bg-blue-300 transition shadow-md"
                 >
                     saiba mais

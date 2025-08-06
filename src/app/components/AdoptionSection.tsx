@@ -50,7 +50,7 @@ const AdoptionSection = ({ especie, icon, codigo }: AdoptionSectionProps) => {
                     <h2 className="text-xl md:text-2xl font-bold">{animais[0].nome}</h2>
                     <p className="text-sm md:text-md">{animais[0].minibio}</p>
                     <Link
-                        href="#"
+                        href={`/animais/${animais[0].id}`}
                         className="px-3 py-2 bg-blue-200 text-sm md:text-md text-dark-blue rounded-lg hover:bg-blue-300 transition shadow-md"
                     >
                         saiba mais
