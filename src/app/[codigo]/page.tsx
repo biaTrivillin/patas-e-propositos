@@ -134,7 +134,6 @@ export default function AnimalsPage({ params }: PageProps) {
                     </select>
                 </div>
 
-                {/* Botão limpar */}
                 <button
                     onClick={limparFiltros}
                     className="px-4 py-2 text-sm underline font-medium text-gray-600 hover:text-red-500 transition"
@@ -143,7 +142,6 @@ export default function AnimalsPage({ params }: PageProps) {
                 </button>
             </div>
 
-            {/* Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 my-20 px-5">
                 {animaisFiltrados.length > 0 ? (
                     animaisFiltrados.map((animal) => (

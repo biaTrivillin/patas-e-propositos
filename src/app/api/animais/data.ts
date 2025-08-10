@@ -7,7 +7,7 @@ export const animais = [
     especie: "gato",
     raca: "Siamês",
     idade: 2,
-    sexo: "fêmea",
+    sexo: "femea",
     porte: "pequeno",
     castrado: true,
     vacinado: true
@@ -28,13 +28,13 @@ export const animais = [
   {
     id: 3,
     nome: "Mimi",
-    minibio: "Mimi é uma Maine Coon dócil e extremamente sociável, que adora longas sessões de carinho e atenção. Ela tem uma personalidade extrovertida, se dando muito bem com outros animais e pessoas. Mimi é uma verdadeira brincalhona, sempre pronta para interagir e animar o ambiente. Sua pelagem exuberante e porte médio fazem dela um gato imponente, mas com um temperamento doce e equilibrado, perfeito para quem busca uma companhia alegre e carinhosa.",
+    minibio: "Mimi é uma Maine Coon dócil e extremamente sociável, que adora longas sessões de carinho e atenção. Ela tem uma personalidade extrovertida, se dando muito bem com outros animais e pessoas. Mimi é uma verdadeira brincalhona, sempre pronta para interagir e animar o ambiente. Sua pelagem exuberante e porte medio fazem dela um gato imponente, mas com um temperamento doce e equilibrado, perfeito para quem busca uma companhia alegre e carinhosa.",
     imagem: "/images/freepik__the-style-is-candid-image-photography-with-natural__78761.jpeg",
     especie: "gato",
     raca: "Maine Coon",
     idade: 3,
-    sexo: "fêmea",
-    porte: "médio",
+    sexo: "femea",
+    porte: "medio",
     castrado: true,
     vacinado: false
   },
@@ -59,8 +59,8 @@ export const animais = [
     especie: "gato",
     raca: "Ragdoll",
     idade: 5,
-    sexo: "fêmea",
-    porte: "médio",
+    sexo: "femea",
+    porte: "medio",
     castrado: false,
     vacinado: true
   },
@@ -98,7 +98,7 @@ export const animais = [
     especie: "cachorro",
     raca: "Poodle",
     idade: 2,
-    sexo: "fêmea",
+    sexo: "femea",
     porte: "pequeno",
     castrado: false,
     vacinado: true
@@ -112,7 +112,7 @@ export const animais = [
     raca: "Bulldog Francês",
     idade: 3,
     sexo: "macho",
-    porte: "médio",
+    porte: "medio",
     castrado: true,
     vacinado: false
   },
@@ -124,7 +124,7 @@ export const animais = [
     especie: "cachorro",
     raca: "Golden Retriever",
     idade: 5,
-    sexo: "fêmea",
+    sexo: "femea",
     porte: "grande",
     castrado: false,
     vacinado: true
@@ -138,7 +138,7 @@ export const animais = [
     raca: "Beagle",
     idade: 3,
     sexo: "macho",
-    porte: "médio",
+    porte: "medio",
     castrado: true,
     vacinado: true
   },
@@ -150,7 +150,7 @@ export const animais = [
     especie: "cachorro",
     raca: "Shih Tzu",
     idade: 2,
-    sexo: "fêmea",
+    sexo: "femea",
     porte: "pequeno",
     castrado: false,
     vacinado: false
