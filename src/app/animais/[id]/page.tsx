@@ -32,17 +32,21 @@ export default function AnimalsPage({ params }: PageProps) {
     }
 
     return (
-        <div className="flex flex-col md:flex-row mt-15 gap-6 md:gap-10">
-            {animal && (
-                <>
-                    <div className="w-full md:w-3/4">
-                        <VerticalCard animal={animal} />
-                    </div>
-                    <div className="w-full md:w-1/4">
-                        <AnimalInfoCard animal={animal} />
-                    </div>
-                </>
-            )}
-        </div>
+        <>
+            <div className="bg-salmon w-full h-50 rounded-b-lg"></div>
+
+            <div className="flex flex-col md:flex-row -mt-24 mx-5 gap-6 md:gap-10">
+                {animal && (
+                    <>
+                        <div className="w-full md:w-3/4">
+                            <VerticalCard animal={animal} />
+                        </div>
+                        <div className="w-full md:w-1/4">
+                            <AnimalInfoCard animal={animal} />
+                        </div>
+                    </>
+                )}
+            </div>
+        </>
     );
 }

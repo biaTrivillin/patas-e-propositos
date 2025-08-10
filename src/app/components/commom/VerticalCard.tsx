@@ -44,6 +44,8 @@ const VerticalCard = ({ animal }: VerticalCardProps) => {
                         src={animal.imagem}
                         alt={animal.nome}
                         className="max-w-full max-h-full object-contain rounded-lg"
+                        width={500}
+                        height={500}
                     />
                 </div>
             )}
