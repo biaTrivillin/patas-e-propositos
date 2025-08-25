@@ -23,8 +23,12 @@ export function Header() {
             </button>
 
             <nav className={`flex-col md:flex md:flex-row md:space-x-4 absolute md:static top-16 left-0 w-full md:w-auto md:bg-transparent transition-all duration-300 shadow-md md:shadow-none ${menuOpen ? "flex" : "hidden"}`}>
+                <Link href="/recursos-educativos" className="relative px-4 py-2 group">
+                    <span className="text-gray-800">Aprenda mais</span>
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-dark-blue transition-all duration-300 group-hover:w-full"></span>
+                </Link>
                 <Link href="/cachorros" className="relative px-4 py-2 group">
-                    <span className="text-gray-800">Adote um cão</span>
+                    <span className="text-gray-800">Adote um cachorro</span>
                     <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-dark-blue transition-all duration-300 group-hover:w-full"></span>
                 </Link>
                 <Link href="/gatos" className="relative px-4 py-2 group">

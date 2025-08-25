@@ -8,9 +8,9 @@ const HomeBanner = () => {
                     Conectando corações que latem e ronronam com lares cheios de amor.
                 </h2>
                 <div className="flex justify-center md:justify-start">
-                    <button className="px-4 py-2 bg-blue-200 text-lg text-dark-blue rounded-lg hover:bg-blue-300 transition shadow-md">
+                    <a href="#adote" className="px-4 py-2 bg-blue-200 text-lg text-dark-blue rounded-lg hover:bg-blue-300 transition shadow-md">
                         adote um amigo
-                    </button>
+                    </a>
                 </div>
             </div>
 
