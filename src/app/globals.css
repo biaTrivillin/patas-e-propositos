@@ -8,6 +8,14 @@
   color: #2C3E50;
 }
 
+.bg-salmon {
+  background-color: #E09E95;
+}
+
+.text-salmon {
+  color: #E09E95;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -33,6 +41,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.bg-gray {
+  background-color: #F7F7F7;
+}
 
 body {
   background-color: #F7F7F7;
