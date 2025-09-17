@@ -2,6 +2,7 @@ import { FaCat, FaDog } from "react-icons/fa";
 import AdoptionSection from "./components/AdoptionSection";
 import DonateBanner from "./components/DonateBanner";
 import HomeBanner from "./components/HomeBanner";
+import EducativeSection from "./components/EducativeSection";
 
 const especies = [
   {
@@ -24,13 +25,14 @@ export default function Home() {
       {
         especies.map(especie => (
           <AdoptionSection
-            key={especie.codigo}  
-            especie={especie.especie}
-            icon={especie.icon}
-            codigo={especie.codigo}
+          key={especie.codigo}  
+          especie={especie.especie}
+          icon={especie.icon}
+          codigo={especie.codigo}
           />
         ))
       }
+      <EducativeSection/>
 
     </div>
   );
